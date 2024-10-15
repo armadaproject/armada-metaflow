@@ -1,16 +1,18 @@
+"""Setup.py for armada-metaflow which provides @armada step decorator for metaflow"""
+
 from setuptools import setup, find_packages
 
 version = "0.0.1"
 
-with open("OSS_VERSION", "rt") as f:
+with open("OSS_VERSION", "rt", encoding="utf-8") as f:
     mf_version = f.read()
 
 setup(
-    name="mycompany-metaflow",
+    name="armada-metaflow",
     version=version,
-    description="Metaflow Custom Extensions",
-    author="Your team name",
-    author_email="team@company.com",
+    description="Armada Metaflow Custom Extension",
+    author="GR-OSS",
+    author_email="clif@gr-oss.io",
     packages=find_packages(),
     py_modules=[
         "metaflow_extensions",
@@ -19,7 +21,6 @@ setup(
         # CONFIGURE: You can list any additional requirements for your
         # extensions here
         # Preferred: Pin a version of metaflow here.
-        "metaflow=%s"
-        % mf_version
+        f"metaflow={mf_version}"
     ],
 )
