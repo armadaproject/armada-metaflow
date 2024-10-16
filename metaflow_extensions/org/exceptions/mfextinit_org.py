@@ -1,13 +1,12 @@
+"""armada-metaflow specific exceptions"""
+
 from metaflow.exception import MetaflowException
 
-###
-# CONFIGURE: Add any additional exception you wish to expose under metaflow.exception
-#            here.
-###
 
+class ArmadaException(MetaflowException):
+    """Generic armada-metaflow Exception"""
 
-class MyMFException(MetaflowException):
-    headline = "My very own exception"
+    headline = "Armada error"
 
     def __init__(self):
-        super().__init__("Will be accessible as metaflow.exception.MyMFException")
+        super().__init__("The armada-metaflow extension encountered a problem.")
