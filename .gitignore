@@ -1,3 +1,10 @@
+# Python build stuff
+build/
+armada_metaflow.egg-info/
+
+# Compiled python
 *.pyc
+
+# Editor cruft
 .vscode
 .*.sw*
