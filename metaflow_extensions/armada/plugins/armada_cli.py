@@ -14,7 +14,7 @@ from metaflow.metadata.util import (
 from metaflow.metaflow_config import DATASTORE_LOCAL_DIR
 import metaflow.tracing as tracing
 
-from .armada import (
+from ..plugins.armada import (
     submit_jobs,
     create_armada_pod_spec,
     generate_container_command,
@@ -23,7 +23,10 @@ from .armada import (
     TERMINAL_JOB_STATES,
 )
 
-from .logging import log_thread
+from ..plugins.logging import log_thread
+
+
+commands = ["armada"]
 
 
 @click.group()
