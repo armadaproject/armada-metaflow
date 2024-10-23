@@ -1,6 +1,7 @@
 # Python build stuff
 build/
 armada_metaflow.egg-info/
+__pycache__
 
 # Compiled python
 *.pyc
