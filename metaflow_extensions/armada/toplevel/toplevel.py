@@ -5,6 +5,7 @@ __mf_extensions__ = "armada-metaflow"
 from ..plugins import armada
 from ..plugins.armada_decorator import ArmadaDecorator
 from ..plugins import armada_cli
+from ..plugins import logging as armada_logging
 
 
 __mf_promote_submodules__ = []
